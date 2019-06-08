@@ -1,4 +1,4 @@
-
+import random
 cj_enrolment = (50+66+78+99)
 gk_enrolment = (12+55+6+0)
 cj_pay = (50+40+30+0)
@@ -46,3 +46,17 @@ print("戴吟绮助理国开缴费总标准人数：%s" %(3))
 print("戴吟绮助理总预估人数：%s" %(14*0.87+9*0.09+3*0.92-5))
 print("戴吟绮助理单生绩效值：%s" %(500))
 print("戴吟绮助理个人绩效：%s" %((14*0.87+9*0.09+3*0.92-5)*500))
+
+
+print(random.randint(0,1))
+
+# 问题：为什么当istrue = 0时方法返回None
+def create_mobile():
+    istrue = random.randint(0,1)
+    if (istrue  == 0):
+        create_mobile()
+    else:
+        return istrue
+
+if __name__ == '__main__':
+    print(create_mobile())
