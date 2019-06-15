@@ -55,4 +55,4 @@ class rewrxl():
 
 if __name__ == '__main__':
     l=rewrxl()
-
+    l.swrite_xl('Cookies','D', 'fafasgafasf')

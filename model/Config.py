@@ -8,6 +8,11 @@ def url():
     url = 'http://bms.yzwill.cn/'
     return url
 
+def urls():
+    # urls = "https://test.yzwill.cn/"
+    urls = "http://zm-3.yzwill.cn/"
+    return urls
+
 def path_log():
     pwd = os.getcwd()
     p1 = os.path.dirname(os.path.abspath('.'))
@@ -20,9 +25,9 @@ def path_xlexcel():
     p1 = os.path.abspath(os.path.dirname(pwd) + os.path.sep + ".")
     p2 = "test_data\Excel_File\ApiStudentBaseInfo.xlsx"
     #调试用
-    # path = os.path.join(p1, p2)
+    path = os.path.join(p1, p2)
     #正式用
-    path = os.path.join(pwd, p2)
+    # path = os.path.join(pwd, p2)
     return path
 
 def path_case():

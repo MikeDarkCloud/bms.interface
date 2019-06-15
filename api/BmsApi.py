@@ -181,7 +181,10 @@ class BmsApi(rewrxl):
             r = requests.post(urls, data=data, cookies=cookies)
             print(r.status_code)
             print(r.text)
-            return r.status_code,r.text
+            sleep(5)
+            mysql2 = "SELECT zhimi_amount FROM us.us_base_info WHERE mobile = '%s'" % self.sread_xl('GKdata', 'B')
+            zhimi_amount = ConnectMysql().select_mysql(mysql2)
+            return r.status_code,r.text,zhimi_amount
         elif recruitType == 2:
             endpoint1 = 'feeReview/reviewFees.do'
             urls = ''.join([url(), endpoint1])

@@ -44,7 +44,9 @@ class Pay(StartEnd):
         response = BmsApi().reviewFee(2)
         status_code = response[0]
         code_text = response[1]
-        self.assertEqual(status_code,200,msg="国开第一学期支付审核失败")
+        zhimi_amount = response[2]
+        self.assertEqual(status_code,200,msg="国开第一学期支付审核接口调用失败")
+        self.assertEqual(zhimi_amount,"1960.00",msg="国开缴纳第一学期学费未送智米")
         self.assertEqual(code_text, '{"code":"00","body":"SUCCESS","msg":"","ok":true}', msg="成国开第一学期支付审核接口服务处理失败！")
 
 if __name__ == '__main__':
