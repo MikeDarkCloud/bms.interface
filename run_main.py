@@ -103,7 +103,7 @@ if __name__ == "__main__":
     # 收件人多个时，中间用逗号隔开,如'a@xx.com,b@xx.com',
     receiver = "975922642@qq.com"
     smtp_server = 'smtp.126.com'
-    send_mail(sender, psw, receiver, smtp_server, report_file)
+    # send_mail(sender, psw, receiver, smtp_server, report_file)
     # 4最后一步发送报告，需要发邮件就取消注释
 
 

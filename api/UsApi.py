@@ -7,7 +7,7 @@ import json
 from GetUsTestData import *
 class UsApi(rewrxl):
 
-    def us_register_success(self):
+    def us_register(self):
         '''公众号注册接口'''
         endpoint = 'proxy/us/login/1.0/'
         urls = ''.join([Config.urls(),endpoint])
@@ -19,7 +19,7 @@ class UsApi(rewrxl):
         print(r.text)
         return r.status_code,r.text
 
-    def us_updateUserNam_success(self):
+    def us_updateUserNam(self):
         '''公众号更新用户姓名接口'''
         endpoint = 'proxy/us/updateUserName/1.0/'
         urls = ''.join([Config.urls(),endpoint])
@@ -29,7 +29,7 @@ class UsApi(rewrxl):
         # t= '{"body":"success","code":"00","message":"success","ok":true}'
         return r.status_code, r.text
 
-    def us_sign_success(self):
+    def us_sign(self):
         '''公众号更新用户姓名接口'''
         endpoint = 'proxy/us/sign/1.0/'
         urls = ''.join([Config.urls(),endpoint])
@@ -39,7 +39,7 @@ class UsApi(rewrxl):
         # t= '{"body":"5","code":"00","message":"success","ok":true}'
         return r.status_code, r.text
 
-    def us_proxy_getCommitToken_success(self):
+    def us_proxy_getCommitToken(self):
         '''获取报名zmtoken'''
         endpoint = 'proxy/proxy/getCommitToken/1.0/'
         urls = ''.join([Config.urls(),endpoint])
@@ -52,7 +52,7 @@ class UsApi(rewrxl):
         # t= '{"body":"5","code":"00","message":"success","ok":true}'
         return r.status_code, r.text
 
-    def us_cj_mkt_enroll_success(self):
+    def us_cj_mkt_enroll(self):
         '''公众号成教报读接口'''
         endpoint = 'proxy/mkt/enroll/1.0/'
         urls = ''.join([Config.urls(),endpoint])
@@ -61,7 +61,7 @@ class UsApi(rewrxl):
         print(r.text)
         return r.status_code, r.text
 
-    def us_gk_mkt_enroll_success(self):
+    def us_gk_mkt_enroll(self):
         '''公众号国开报读接口'''
         endpoint = 'proxy/mkt/enroll/1.0/'
         urls = ''.join([Config.urls(),endpoint])
@@ -71,8 +71,8 @@ class UsApi(rewrxl):
         return r.status_code, r.text
 
 if __name__ == '__main__':
-    UsApi().us_register_success()
-    UsApi().us_updateUserNam_success()
-    UsApi().us_sign_success()
-    UsApi().us_proxy_getCommitToken_success()
-    UsApi().us_cj_mkt_enroll_success()
+    UsApi().us_register()
+    UsApi().us_updateUserNam()
+    UsApi().us_sign()
+    UsApi().us_proxy_getCommitToken()
+    UsApi().us_cj_mkt_enroll()

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c05b6613-7d81-428b-acf3-854f42871ba0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api/UsApi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pubilc/GetUsTestData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_case/test_09_us_register.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/BmsApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/BmsApi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/UsApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/UsApi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubilc/CreateMobile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pubilc/CreateMobile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubilc/XLExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pubilc/XLExcel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_02_pay.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_02_pay.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_08_student__out.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_08_student_out.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/www/new.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/www/new.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_data/Excel_File/ApiStudentBaseInfo.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/Excel_File/ApiStudentBaseInfo.xlsx" afterDir="false" />
     </list>
@@ -24,36 +19,37 @@
     <session id="-299716445">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="py" value="115" />
+          <entry key="py" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="Python" value="115" />
+          <entry key="Python" value="118" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="py" value="10836" />
+          <entry key="py" value="11081" />
           <entry key="txt" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="10836" />
+          <entry key="Python" value="11081" />
         </counts>
       </usages-collector>
     </session>
@@ -63,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/BmsApi.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="540">
               <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="56" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -76,7 +72,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubilc/XLExcel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="162">
               <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
@@ -86,28 +82,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case/test_01_recruitAdd.py">
+        <entry file="file://$PROJECT_DIR$/test_case/test_08_student_out.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python 3.5/Lib/site-packages/openpyxl/cell/cell.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="206" selection-start-line="206" selection-end-line="206" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://C:/Program Files/Python 3.5/Lib/zipfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="1010" selection-start-line="1010" selection-end-line="1010" />
+            <state relative-caret-position="756">
+              <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="113" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubilc/GetUsTestData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="806">
-              <caret line="129" column="51" lean-forward="true" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
+            <state relative-caret-position="3078">
+              <caret line="129" column="51" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -127,7 +108,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubilc/GetTestData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
+            <state relative-caret-position="2214">
               <caret line="93" selection-start-line="93" selection-end-line="94" selection-end-column="34" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -138,14 +119,39 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/model/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="709">
+              <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
               <folding>
-                <marker date="1560572738458" expanded="true" signature="162:255" ph="..." />
-                <marker date="1560572738458" expanded="true" signature="999:1000" ph="..." />
+                <marker date="1560752714716" expanded="true" signature="162:255" ph="..." />
+                <marker date="1560752714716" expanded="true" signature="999:1000" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/UsApi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1539">
+              <caret line="63" column="24" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_case/test_09_us_register.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1269">
+              <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+                <marker date="1560731983171" expanded="true" signature="68:475" ph="..." />
               </folding>
             </state>
           </provider>
@@ -154,23 +160,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/www/new.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
-              <folding>
-                <element signature="e#3777#3788#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/UsApi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1331">
+              <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -218,18 +209,20 @@
         <option value="$PROJECT_DIR$/test_case/test_02_pay.py" />
         <option value="$PROJECT_DIR$/pubilc/GetUsApiTestData.py" />
         <option value="$PROJECT_DIR$/run_main.py" />
-        <option value="$PROJECT_DIR$/test_case/www/new.py" />
         <option value="$PROJECT_DIR$/api/BmsApi.py" />
         <option value="$PROJECT_DIR$/pubilc/XLExcel.py" />
-        <option value="$PROJECT_DIR$/model/Config.py" />
         <option value="$PROJECT_DIR$/pubilc/GetUsTestData.py" />
+        <option value="$PROJECT_DIR$/test_case/www/test_09_us_register.py" />
         <option value="$PROJECT_DIR$/api/UsApi.py" />
+        <option value="$PROJECT_DIR$/test_case/test_09_us_register.py" />
+        <option value="$PROJECT_DIR$/test_case/www/new.py" />
+        <option value="$PROJECT_DIR$/model/Config.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="154" />
+    <option name="y" value="14" />
     <option name="width" value="1330" />
     <option name="height" value="962" />
   </component>
@@ -239,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,6 +262,12 @@
             <path>
               <item name="bms.interface" type="b2602c69:ProjectViewProjectNode" />
               <item name="bms.interface" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bms.interface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bms.interface" type="462c0819:PsiDirectoryNode" />
               <item name="test_data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -278,21 +276,11 @@
               <item name="test_data" type="462c0819:PsiDirectoryNode" />
               <item name="Excel_File" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bms.interface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bms.interface" type="462c0819:PsiDirectoryNode" />
-              <item name="test_report" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bms.interface" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bms.interface" type="462c0819:PsiDirectoryNode" />
-              <item name="test_report" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,18 +288,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\bms.interface\test_case" />
+      <recent name="C:\bms.interface\test_case\www" />
+      <recent name="C:\bms.interface" />
+      <recent name="C:\bms.interface\test_data" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\bms.interface" />
       <recent name="C:\bms.interface\test_data\jpg" />
       <recent name="C:\bms.interface\pubilc" />
       <recent name="C:\bms.interface\test_data\Excel_File" />
       <recent name="C:\bms.interface\model" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\bms.interface\test_case\www" />
-      <recent name="C:\bms.interface\test_case" />
-      <recent name="C:\bms.interface" />
-      <recent name="C:\bms.interface\test_data" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -326,7 +314,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.UsApi">
+  <component name="RunManager" selected="Python.new (1)">
     <configuration name="UsApi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bms.interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -441,9 +429,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.new (1)" />
         <item itemvalue="Python.UsApi" />
         <item itemvalue="Python.XLExcel" />
-        <item itemvalue="Python.new (1)" />
         <item itemvalue="Python.run_main" />
         <item itemvalue="Python.run" />
       </list>
@@ -503,16 +491,16 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1330" height="962" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17492098" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25696594" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33997786" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.43648207" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43648207" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -593,9 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <marker date="1559453739151" expanded="true" signature="113:133" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -663,19 +648,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_08_student_out.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1593">
-          <caret line="60" column="53" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,9 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
           <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,9 +662,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
           <caret line="97" column="27" lean-forward="true" selection-start-line="97" selection-start-column="27" selection-end-line="97" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,10 +669,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-81">
           <caret line="36" column="44" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-            <marker date="1559710216258" expanded="true" signature="169:554" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,9 +676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#20#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="105" column="62" selection-start-line="105" selection-start-column="62" selection-end-line="105" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,19 +714,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/www/new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="117" lean-forward="true" selection-start-line="117" selection-end-line="117" />
-          <folding>
-            <element signature="e#3777#3788#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubilc/GetUsApiTestData.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pubilc/GetUsApiTestData.py" />
     <entry file="file://C:/Program Files/Python 3.5/Lib/site-packages/requests/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -785,42 +729,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/BmsApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="56" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1560013960894" expanded="true" signature="86:91" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files/Python 3.5/Lib/zipfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="1010" selection-start-line="1010" selection-end-line="1010" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubilc/XLExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <marker date="1560572738458" expanded="true" signature="162:255" ph="..." />
-            <marker date="1560572738458" expanded="true" signature="999:1000" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,9 +743,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/BmsApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1560013960894" expanded="true" signature="86:91" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubilc/XLExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_08_student_out.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="29" selection-start-line="29" selection-end-line="32" selection-end-column="113" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubilc/GetUsTestData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3078">
+          <caret line="129" column="51" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pubilc/GetTestData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="2214">
           <caret line="93" selection-start-line="93" selection-end-line="94" selection-end-column="34" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -843,22 +796,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubilc/GetUsTestData.py">
+    <entry file="file://$PROJECT_DIR$/api/UsApi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="806">
-          <caret line="129" column="51" lean-forward="true" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
+        <state relative-caret-position="1539">
+          <caret line="63" column="24" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="24" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/UsApi.py">
+    <entry file="file://$PROJECT_DIR$/test_case/test_09_us_register.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="75" column="29" lean-forward="true" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
+        <state relative-caret-position="1269">
+          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#20#0" expanded="true" />
+            <marker date="1560731983171" expanded="true" signature="68:475" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/www/new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1331">
+          <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+          <folding>
+            <marker date="1560752714716" expanded="true" signature="162:255" ph="..." />
+            <marker date="1560752714716" expanded="true" signature="999:1000" ph="..." />
           </folding>
         </state>
       </provider>

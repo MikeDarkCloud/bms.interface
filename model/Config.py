@@ -53,3 +53,8 @@ def path_jpg():
     #正式用
     path = os.path.join(pwd, p2)
     return path
+
+def get_Invitation_url():
+    '''邀约链接'''
+    url = "http://zm-3.yzwill.cn/invite?action=login&inviteId=74c%2BQfTz20Ckbk8BiyTPt%2BrrtJMpWANS"
+    return url

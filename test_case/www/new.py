@@ -105,13 +105,26 @@
 # # print(newNumbers)
 
 import time
-import base64
-import json
-params = {'mobile': '15632585787', 'valicode': '888888', 'notPrompt': '1', 'token': '', 'regChannel': '3',
-          'registerUrl': 'https://test.yzwill.cn?action=login&scholarship=&inviteId=&regOrigin=',
-          'bindType': '1', 'inviteToken': '', 'scholarship': '', 'idCard': '', 'regOrigin': '', 'channelId': '',
-          'sign': '', 'timeStamp': 'timeStamp'}
+# import base64
+# import json
+# params = {'mobile': '15632585787', 'valicode': '888888', 'notPrompt': '1', 'token': '', 'regChannel': '3',
+#           'registerUrl': 'https://test.yzwill.cn?action=login&scholarship=&inviteId=&regOrigin=',
+#           'bindType': '1', 'inviteToken': '', 'scholarship': '', 'idCard': '', 'regOrigin': '', 'channelId': '',
+#           'sign': '', 'timeStamp': 'timeStamp'}
+#
+# r=bytes('{}'.format(params),'utf-8')
+# params1 = base64.b64encode(r).decode('utf-8')
+# print(params1)
 
-r=bytes('{}'.format(params),'utf-8')
-params1 = base64.b64encode(r).decode('utf-8')
-print(params1)
+class people:
+    name=''
+    age=0           #定义私有属性,私有属性
+    _weight=0
+    def __init__(self,n,a,w):
+       self.name=n
+       self.age=a
+       self._weight=w
+       print(self.name)
+y=people('yuxiaoyan',27,40)
+print (y)
+
