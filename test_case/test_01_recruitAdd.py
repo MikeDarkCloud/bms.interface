@@ -40,4 +40,9 @@ class RecruitAddTest(StartEnd):
 
 
 if __name__ == '__main__':
-      unittest.main()
+    i = 5
+    while i is True:
+        RecruitAddTest().test_00_login()
+        RecruitAddTest().test_01_cj_recruit_webtoken()
+        RecruitAddTest().test_02_cj_recruit()
+        i = i-1

@@ -19,9 +19,11 @@ class GetUsTestData(rewrxl):
     def get_us_login_data(self):
         '''组装公众号注册接口参数'''
         timeStamp=int(time.time())
+        inviteToken = ""
+        registerUrl="http://zm-3.yzwill.cn?action=login&scholarship=&inviteId=&regOrigin="
         headers = {"Content-Type":"text/yzedu+;charset=utf-8","Accept": "application/json, text/plain, */*"}
         data={"header":{"appType":"2","frontTrace":""},"body":{"valicode":"888888","notPrompt":1,"token":"","regChannel":3,
-                        "registerUrl":"http://zm-3.yzwill.cn?action=login&scholarship=&inviteId=&regOrigin=","bindType":"1","inviteToken":"",
+                        "registerUrl":registerUrl,"bindType":"1","inviteToken":inviteToken,
                         "scholarship":"","idCard":"","regOrigin":"","channelId":"","sign":"","timeStamp":timeStamp}}
         mobile = create_mobile()
         self.swrite_xl('UCJdata','A', mobile)

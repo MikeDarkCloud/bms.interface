@@ -116,15 +116,31 @@ import time
 # params1 = base64.b64encode(r).decode('utf-8')
 # print(params1)
 
-class people:
-    name=''
-    age=0           #定义私有属性,私有属性
-    _weight=0
-    def __init__(self,n,a,w):
-       self.name=n
-       self.age=a
-       self._weight=w
-       print(self.name)
-y=people('yuxiaoyan',27,40)
-print (y)
+# def neww(type,*s):
+#     if type == True:
+#         i = s[0]
+#         j = s[1]
+#         print(i,j)
+#     else:
+#         i = "ssss"
+#         print(i)
+#
+# neww(1,'8888','sfdgg')
 
+from test_case.test_01_recruitAdd import *
+
+
+def addtestdata():
+    RecruitAddTest().test_00_login()
+    for i in range(0,10):
+        # RecruitAddTest().test_01_cj_recruit_webtoken()
+        # RecruitAddTest().test_02_cj_recruit()
+        RecruitAddTest().test_03_gk_recruit_webtoken()
+        RecruitAddTest().test_04_gk_recruit()
+
+addtestdata()
+#
+# for i in range(0,4):
+#     RecruitAddTest().test_00_login()
+#     RecruitAddTest().test_03_gk_recruit_webtoken()
+#     RecruitAddTest().test_04_gk_recruit()

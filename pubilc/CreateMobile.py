@@ -11,10 +11,9 @@ def create_mobile():
     mobile = get_mobile()
     istrue = ConnectMysql().select_mysql("SELECT count(*) FROM bms.bd_learn_info WHERE mobile = '%s'" %mobile)
     if (istrue[0][0]  != 0):
-        return get_mobile()
+        return create_mobile()
     else:
         return mobile
-
 
 if __name__ == '__main__':
     print(create_mobile())
