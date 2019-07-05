@@ -1,5 +1,5 @@
-from myunit import *
-from BmsApi import *
+from model.myunit import *
+from api.BmsApi import *
 class RecruitAddTest(StartEnd):
     def test_00_login(self):
         '''后台登录接口'''

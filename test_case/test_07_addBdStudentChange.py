@@ -1,5 +1,5 @@
-from myunit import *
-from BmsApi import *
+from model.myunit import *
+from api.BmsApi import *
 class AddBdStudentChange(StartEnd):
     # @unittest.skip('skip this  case')
     def test_00_cj_studentchange_getTestdata(self):

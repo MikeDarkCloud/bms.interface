@@ -127,20 +127,36 @@ import time
 #
 # neww(1,'8888','sfdgg')
 
-from test_case.test_01_recruitAdd import *
-
-
-def addtestdata():
-    RecruitAddTest().test_00_login()
-    for i in range(0,10):
-        # RecruitAddTest().test_01_cj_recruit_webtoken()
-        # RecruitAddTest().test_02_cj_recruit()
-        RecruitAddTest().test_03_gk_recruit_webtoken()
-        RecruitAddTest().test_04_gk_recruit()
-
-addtestdata()
+# from test_case.test_01_recruitAdd import *
 #
-# for i in range(0,4):
+#
+# def addtestdata():
 #     RecruitAddTest().test_00_login()
-#     RecruitAddTest().test_03_gk_recruit_webtoken()
-#     RecruitAddTest().test_04_gk_recruit()
+#     for i in range(0,10):
+#         RecruitAddTest().test_01_cj_recruit_webtoken()
+#         RecruitAddTest().test_02_cj_recruit()
+#         # RecruitAddTest().test_03_gk_recruit_webtoken()
+#         # RecruitAddTest().test_04_gk_recruit()
+#
+# addtestdata()
+# #
+# # for i in range(0,4):
+# #     RecruitAddTest().test_00_login()
+# #     RecruitAddTest().test_03_gk_recruit_webtoken()
+# #     RecruitAddTest().test_04_gk_recruit()
+class people():
+    name=''
+    age=0
+    _weight=0
+    def __init__(self,n,a,w):
+        self.name=n
+        self.age=a
+        self._weight=w
+    def speak(self):
+        print ("我的名字是："+str(self.name)+"我的年龄是："+str(self.age)+"我的体重是："+str(self._weight)+"kg")
+
+class student(people):
+    def xxx(self):
+        self.speak()
+
+student("小7",2,30).xxx()

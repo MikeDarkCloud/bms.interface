@@ -5,8 +5,9 @@ class BmsApi(rewrxl):
     '''bms接口'''
     def login(self):
         endpoint = 'login.do'
+        user=Config.loginUser()
         urls = ''.join([Config.url(),endpoint])
-        params = {"username": "蓝明勇", "password": "Yz123456", "validCode": "1111"}
+        params = {"username": user[0], "password": user[1], "validCode": "1111"}
         r = requests.post(urls, params=params)
         print(r.status_code)
         print(r.text)

@@ -1,6 +1,6 @@
-from myunit import *
-from BmsApi import *
-from CreateIdentity import *
+from model.myunit import *
+from api.BmsApi import *
+from pubilc.CreateIdentity import *
 class StudentModifyAdd(StartEnd):
 
     # @unittest.skip('skip this  case')

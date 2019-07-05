@@ -1,6 +1,6 @@
 from openpyxl import *
 import os
-from Config import *
+from model.Config import *
 class rewrxl():
     def __init__(self):
         self.path = path_xlexcel()

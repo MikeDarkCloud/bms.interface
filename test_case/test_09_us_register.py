@@ -1,5 +1,5 @@
-from myunit import *
-from UsApi import *
+from model.myunit import *
+from api.UsApi import *
 class UsRegister(StartEnd):
 
     # @unittest.skip('skip this  case')

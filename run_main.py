@@ -1,12 +1,11 @@
 import unittest
 import time
-import BSTestRunner
-import HTMLTestRunner
+from pubilc import BSTestRunner
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import smtplib
 import os
-from Config import *
+from model.Config import *
 '''
 # 这个是优化版执行所有用例并发送报告，分四个步骤
 # 第一步加载用例
@@ -42,8 +41,8 @@ def run_case(all_case, report_path):
     report_spath = os.path.join(report_path, now+"result.html")
     fp = open(report_spath,"wb")
     runner = BSTestRunner.BSTestRunner(stream=fp,
-                                           title = '远智教务系统自动化测试报告：',
-                                           description = '用例执行情况：')
+                                                title = '远智教务系统自动化测试报告：',
+                                                description = '用例执行情况：')
     # 调用add_case函数返回值
     runner.run(all_case)
     fp.close()
@@ -101,7 +100,7 @@ if __name__ == "__main__":
     sender = "lanmingyong@126.com"
     psw = "mike5788973"
     # 收件人多个时，中间用逗号隔开,如'a@xx.com,b@xx.com',
-    receiver = "975922642@qq.com"
+    receiver = getEmailReceiver()
     smtp_server = 'smtp.126.com'
     # send_mail(sender, psw, receiver, smtp_server, report_file)
     # 4最后一步发送报告，需要发邮件就取消注释

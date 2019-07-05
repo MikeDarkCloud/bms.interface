@@ -1,18 +1,17 @@
 import json
-from XLExcel import *
 import re
 import json
-from base import *
-from Config import *
-from CreateMobile import *
-from CreateIdentity import *
-from XLExcel import *
-from ConnectMysql import *
-from GetTestData import *
+from model.base import *
+from model.Config import *
+from pubilc.CreateMobile import *
+from pubilc.CreateIdentity import *
+from pubilc.XLExcel import *
+from pubilc.ConnectMysql import *
+from pubilc.GetTestData import *
 import time
 import base64
 import logging
-from myunit import *
+from model.myunit import *
 import urllib.parse
 class GetUsTestData(rewrxl):
     '''接口参数组装类'''

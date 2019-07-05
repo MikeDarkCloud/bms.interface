@@ -1,14 +1,13 @@
 import json
-from XLExcel import *
 import re
 import json
-from base import *
-from Config import *
-from CreateMobile import *
-from CreateIdentity import *
-from XLExcel import *
-from ConnectMysql import *
-from myunit import *
+from model.base import *
+from model.Config import *
+from pubilc.CreateMobile import *
+from pubilc.CreateIdentity import *
+from pubilc.XLExcel import *
+from pubilc.ConnectMysql import *
+from model.myunit import *
 import urllib.parse
 class GetTestData(rewrxl):
     '''接口参数组装类'''
@@ -76,7 +75,7 @@ class GetTestData(rewrxl):
                 'materialCode': (None, ''), 'pfsnLevel': (None, 5),
                 'enrollType': (None, 1), 'grade': (None, 2020), 'unvsId': (None, 35),
                 'pfsnId': (None, 25731580882379146), 'taId': (None, 161), 'secUnvsId': (None, ''), 'bpType': (None, 3),
-                'points': (None, 20), 'feeId': (None, 155798832599987473), 'offerId': (None, '')}
+                'points': (None, 20), 'feeId': (None, 156206015248035566), 'offerId': (None, '')}
         #bms-3 'feeId': (None, 155791403587912802)  'pfsnId': (None, 154805425064430654)
         num = self.sread_xl('StudentNum','A')
         stdName = 'apiTest%s' %num
@@ -87,6 +86,7 @@ class GetTestData(rewrxl):
         web_token=self.sread_xl('Web_token','A')
         data['_web_token'] = (None, web_token)
         mobile = create_mobile()
+        print(mobile)
         self.swrite_xl('CJdata','B', mobile)
         self.write_xl('C', mobile)
         data['mobile'] = (None, mobile)
@@ -94,7 +94,7 @@ class GetTestData(rewrxl):
         self.swrite_xl('CJdata','C', idCard)
         self.write_xl('B', idCard)
         data['idCard'] = (None, idCard)
-        data['scholarship'] = (None, 36)
+        data['scholarship'] = (None, 37)
 
         return data
 
@@ -219,6 +219,7 @@ class GetTestData(rewrxl):
         '''成教支付审核接口数据组装'''
         data={}
         data["subOrderNo"] = self.sread_xl('CJdata','F')
+        data["learnId"] = self.sread_xl('CJdata','D')
         return data
 
 
@@ -227,7 +228,9 @@ class GetTestData(rewrxl):
         subOrderNos1=(self.sread_xl('GKdata','F'))
         subOrderNos2=(self.sread_xl('GKdata','G'))
         subOrderNos3=(self.sread_xl('GKdata','H'))
-        data = {"subOrderNos[]": [subOrderNos1, subOrderNos2, subOrderNos3]}
+        learnId=(self.sread_xl('GKdata','D'))
+        data = [{"subOrderNo": subOrderNos1, "learnId": learnId}, {"subOrderNo": subOrderNos2, "learnId": learnId},
+                {"subOrderNo": subOrderNos3, "learnId": learnId}]
         return data
 
     def get_cj_passStudentAuditModify_data(self):
