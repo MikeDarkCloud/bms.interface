@@ -3,8 +3,7 @@ import os
 from model.Config import *
 class rewrxl():
     def __init__(self):
-        self.path = path_xlexcel()
-        # print(self.path)
+        self.path = Config().path_xlexcel()
 
     def write_xl(self,col,value):
         '''自增行写入学员数据'''

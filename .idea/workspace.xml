@@ -2,42 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c05b6613-7d81-428b-acf3-854f42871ba0" name="Default Changelist" comment="增加过滤已存在手机号">
-      <change afterPath="$PROJECT_DIR$/create_cj_test_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conf/conf.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/BmsApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/BmsApi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/UsApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/UsApi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/myunit.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/myunit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubilc/ConnectMysql.py" beforeDir="false" afterPath="$PROJECT_DIR$/pubilc/ConnectMysql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubilc/CreateMobile.py" beforeDir="false" afterPath="$PROJECT_DIR$/pubilc/CreateMobile.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubilc/GetTestData.py" beforeDir="false" afterPath="$PROJECT_DIR$/pubilc/GetTestData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubilc/GetUsTestData.py" beforeDir="false" afterPath="$PROJECT_DIR$/pubilc/GetUsTestData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubilc/Log.py" beforeDir="false" afterPath="$PROJECT_DIR$/pubilc/Log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubilc/XLExcel.py" beforeDir="false" afterPath="$PROJECT_DIR$/pubilc/XLExcel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/new.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/new.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_01_recruitAdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_01_recruitAdd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_02_pay.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_02_pay.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_03_ModifyAdd.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_03_ModifyAdd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_04_updateAnnex.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_04_updateAnnex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_05_okConfirm.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_05_okConfirm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_06_updateStudentScore.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_06_updateStudentScore.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_07_addBdStudentChange.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_07_addBdStudentChange.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_08_student_out.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_08_student_out.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_09_us_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_09_us_register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_data/Excel_File/ApiStudentBaseInfo.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/test_data/Excel_File/ApiStudentBaseInfo.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_06 13_13_02result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_06 13_47_06result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_06 13_56_16result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_06 14_08_57result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_06 14_18_20result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_06 14_25_14result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_07 09_34_25result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_07 09_54_53result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_07 09_56_13result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_10 09_00_07result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_10 09_08_34result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_10 12_39_27result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_10 12_57_08result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_10 13_01_13result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_10 13_05_36result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_report/report/2019_06_10 14_03_09result.html" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,26 +42,30 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="py" value="165" />
+          <entry key="py" value="207" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="Python" value="165" />
+          <entry key="Python" value="207" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="11" />
-          <entry key="py" value="12001" />
+          <entry key="py" value="12539" />
           <entry key="txt" value="11" />
+          <entry key="yml" value="387" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="12001" />
+          <entry key="Python" value="12539" />
+          <entry key="YAML" value="387" />
         </counts>
       </usages-collector>
     </session>
@@ -90,44 +73,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case/test_09_us_register.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1458">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pubilc/GetTestData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-405">
-              <caret line="93" column="44" lean-forward="true" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <marker date="1562068692018" expanded="true" signature="292:297" ph="..." />
-                <marker date="1562068692018" expanded="true" signature="7485:9269" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pubilc/BSTestRunner.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="919">
-              <caret line="580" lean-forward="true" selection-start-line="580" selection-end-line="580" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubilc/ConnectMysql.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="81">
+              <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -136,10 +85,65 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubilc/GetTestData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+              <folding>
+                <marker date="1562568440368" expanded="true" signature="292:297" ph="..." />
+                <marker date="1562568440368" expanded="true" signature="7485:9269" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubilc/GetUsTestData.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubilc/Log.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubilc/XLExcel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conf/conf.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubilc/CreateIdentity.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1459">
-              <caret line="548" column="50" lean-forward="true" selection-start-line="548" selection-start-column="50" selection-end-line="548" selection-end-column="50" />
+            <state relative-caret-position="2437">
+              <caret line="548" column="50" selection-start-line="548" selection-start-column="50" selection-end-line="548" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -147,17 +151,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubilc/CreateMobile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+            <state relative-caret-position="331">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/model/base.py">
+        <entry file="file://$PROJECT_DIR$/model/myunit.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,36 +175,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="81" column="20" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="20" />
+            <state relative-caret-position="199">
+              <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
               <folding>
-                <marker date="1562066808124" expanded="true" signature="162:255" ph="..." />
-                <marker date="1562066808124" expanded="true" signature="1143:1144" ph="..." />
-                <marker date="1562066808124" expanded="true" signature="1647:1652" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/create_cj_test_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#42#51#0" expanded="true" />
+                <marker date="1562600298485" expanded="true" signature="138:339" ph="..." />
+                <marker date="1562600298485" expanded="true" signature="511:564" ph="..." />
+                <marker date="1562600298485" expanded="true" signature="1735:1744" ph="..." />
               </folding>
             </state>
           </provider>
@@ -222,28 +209,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/api/__init__.py" />
-        <option value="$PROJECT_DIR$/model/base.py" />
         <option value="$PROJECT_DIR$/test_case/test_recruitAdd_01.py" />
         <option value="$PROJECT_DIR$/test_case/test_pay_02.py" />
         <option value="$PROJECT_DIR$/pubilc/BSTestRunner.py" />
-        <option value="$PROJECT_DIR$/model/myunit.py" />
-        <option value="$PROJECT_DIR$/pubilc/ConnectMysql.py" />
         <option value="$PROJECT_DIR$/test_case/test_08_student__out.py" />
-        <option value="$PROJECT_DIR$/run.py" />
         <option value="$PROJECT_DIR$/pubilc/GetUsApiTestData.py" />
         <option value="$PROJECT_DIR$/test_case/www/test_09_us_register.py" />
-        <option value="$PROJECT_DIR$/api/UsApi.py" />
         <option value="$PROJECT_DIR$/test_case/www/new.py" />
-        <option value="$PROJECT_DIR$/pubilc/CreateMobile.py" />
         <option value="$PROJECT_DIR$/create_test_data.py" />
         <option value="$PROJECT_DIR$/create_cj_test_data.py" />
-        <option value="$PROJECT_DIR$/api/BmsApi.py" />
-        <option value="$PROJECT_DIR$/test_case/new.py" />
-        <option value="$PROJECT_DIR$/model/Config.py" />
-        <option value="$PROJECT_DIR$/pubilc/GetTestData.py" />
         <option value="$PROJECT_DIR$/pubilc/GetUsTestData.py" />
-        <option value="$PROJECT_DIR$/pubilc/Log.py" />
-        <option value="$PROJECT_DIR$/pubilc/XLExcel.py" />
         <option value="$PROJECT_DIR$/test_case/test_01_recruitAdd.py" />
         <option value="$PROJECT_DIR$/test_case/test_02_pay.py" />
         <option value="$PROJECT_DIR$/test_case/test_03_ModifyAdd.py" />
@@ -253,15 +228,28 @@
         <option value="$PROJECT_DIR$/test_case/test_07_addBdStudentChange.py" />
         <option value="$PROJECT_DIR$/test_case/test_08_student_out.py" />
         <option value="$PROJECT_DIR$/test_case/test_09_us_register.py" />
+        <option value="$PROJECT_DIR$/pubilc/CreateMobile.py" />
+        <option value="$PROJECT_DIR$/pubilc/XLExcel.py" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/pubilc/GetTestData.py" />
         <option value="$PROJECT_DIR$/run_main.py" />
+        <option value="$PROJECT_DIR$/pubilc/Log.py" />
+        <option value="$PROJECT_DIR$/api/BmsApi.py" />
+        <option value="$PROJECT_DIR$/test_case/new.py" />
+        <option value="$PROJECT_DIR$/pubilc/ConnectMysql.py" />
+        <option value="$PROJECT_DIR$/model/myunit.py" />
+        <option value="$PROJECT_DIR$/api/UsApi.py" />
+        <option value="$PROJECT_DIR$/model/base.py" />
+        <option value="$PROJECT_DIR$/model/Config.py" />
+        <option value="$PROJECT_DIR$/conf/conf.yml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="184" />
-    <option name="y" value="7" />
+    <option name="x" value="211" />
+    <option name="y" value="30" />
     <option name="width" value="1330" />
-    <option name="height" value="962" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -281,6 +269,11 @@
               <item name="bms.interface" type="b2602c69:ProjectViewProjectNode" />
               <item name="bms.interface" type="462c0819:PsiDirectoryNode" />
               <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bms.interface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bms.interface" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="bms.interface" type="b2602c69:ProjectViewProjectNode" />
@@ -319,6 +312,10 @@
               <item name="test_report" type="462c0819:PsiDirectoryNode" />
               <item name="report" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bms.interface" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -356,7 +353,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_main">
+  <component name="RunManager" selected="Python.ConnectMysql">
     <configuration name="BmsApi" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bms.interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -378,7 +375,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="create_cj_test_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bms.interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -386,11 +383,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/create_cj_test_data.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/Config.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -399,7 +396,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="new (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ConnectMysql" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="bms.interface" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -407,11 +404,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/www" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pubilc" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\bms.interface\test_case\new.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pubilc/ConnectMysql.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -463,19 +460,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.new (1)" />
       <item itemvalue="Python.new" />
-      <item itemvalue="Python.create_cj_test_data" />
       <item itemvalue="Python.BmsApi" />
       <item itemvalue="Python.run_main" />
+      <item itemvalue="Python.Config" />
+      <item itemvalue="Python.ConnectMysql" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run_main" />
+        <item itemvalue="Python.ConnectMysql" />
+        <item itemvalue="Python.Config" />
         <item itemvalue="Python.new" />
+        <item itemvalue="Python.run_main" />
         <item itemvalue="Python.BmsApi" />
-        <item itemvalue="Python.create_cj_test_data" />
-        <item itemvalue="Python.new (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -542,7 +539,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.33984798" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2062975" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.5537459" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -563,12 +560,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="增加过滤已存在手机号" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/api/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/pubilc/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -598,13 +589,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_report/report/2019_06_01 20_33_39result.html" />
-    <entry file="file://$PROJECT_DIR$/model/myunit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_report/report/2019_06_04 18_14_23result.html" />
     <entry file="file://C:/Program Files/Python 3.5/Lib/urllib/parse.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -680,58 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4131">
-          <caret line="153" column="22" lean-forward="true" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
-          <folding>
-            <marker date="1561602399158" expanded="true" signature="5325:5330" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/BmsApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4293">
-          <caret line="179" column="51" selection-start-line="179" selection-start-column="31" selection-end-line="179" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1561536106196" expanded="true" signature="86:91" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/UsApi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="66" column="35" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubilc/GetUsTestData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubilc/Log.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubilc/XLExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test_case/test_01_recruitAdd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -742,47 +674,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_02_pay.py">
+    <entry file="file://$PROJECT_DIR$/create_cj_test_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="324">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_03_ModifyAdd.py">
+    <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="-324">
+          <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_04_updateAnnex.py">
+    <entry file="file://$PROJECT_DIR$/run_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_09_us_register.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_05_okConfirm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_06_updateStudentScore.py">
+    <entry file="file://$PROJECT_DIR$/test_case/test_08_student_out.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
@@ -802,7 +731,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_08_student_out.py">
+    <entry file="file://$PROJECT_DIR$/test_case/test_06_updateStudentScore.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
@@ -812,48 +741,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
+    <entry file="file://$PROJECT_DIR$/test_case/test_05_okConfirm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_04_updateAnnex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_03_ModifyAdd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/test_02_pay.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="4" selection-end-line="81" selection-end-column="20" />
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
           <folding>
-            <marker date="1562066808124" expanded="true" signature="162:255" ph="..." />
-            <marker date="1562066808124" expanded="true" signature="1143:1144" ph="..." />
-            <marker date="1562066808124" expanded="true" signature="1647:1652" ph="..." />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/create_cj_test_data.py">
+    <entry file="file://$PROJECT_DIR$/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/BmsApi.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        <state relative-caret-position="2561">
+          <caret line="451" column="64" lean-forward="true" selection-start-line="451" selection-start-column="64" selection-end-line="451" selection-end-column="64" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1562568711870" expanded="true" signature="86:91" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/test_09_us_register.py">
+    <entry file="file://C:/Program Files/Python 3.5/Lib/site-packages/yaml/scanner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+        <state relative-caret-position="128">
+          <caret line="256" selection-start-line="256" selection-end-line="256" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubilc/BSTestRunner.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1671">
+          <caret line="580" selection-start-line="580" selection-end-line="580" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="158" lean-forward="true" selection-start-line="158" selection-end-line="158" />
           <folding>
-            <element signature="e#0#20#0" expanded="true" />
+            <element signature="e#3777#3788#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/UsApi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/myunit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pubilc/ConnectMysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="81">
+          <caret line="3" column="19" lean-forward="true" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -862,51 +858,76 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pubilc/CreateIdentity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1459">
-          <caret line="548" column="50" lean-forward="true" selection-start-line="548" selection-start-column="50" selection-end-line="548" selection-end-column="50" />
+        <state relative-caret-position="2437">
+          <caret line="548" column="50" selection-start-line="548" selection-start-column="50" selection-end-line="548" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pubilc/CreateMobile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        <state relative-caret-position="331">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pubilc/BSTestRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="919">
-          <caret line="580" lean-forward="true" selection-start-line="580" selection-end-line="580" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pubilc/GetTestData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="93" column="44" lean-forward="true" selection-start-line="93" selection-start-column="44" selection-end-line="93" selection-end-column="44" />
+        <state relative-caret-position="162">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1562068692018" expanded="true" signature="292:297" ph="..." />
-            <marker date="1562068692018" expanded="true" signature="7485:9269" ph="..." />
+            <marker date="1562568440368" expanded="true" signature="292:297" ph="..." />
+            <marker date="1562568440368" expanded="true" signature="7485:9269" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubilc/GetUsTestData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="14" lean-forward="true" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubilc/Log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubilc/XLExcel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+          <folding>
+            <element signature="e#42#51#0" expanded="true" />
+            <marker date="1562600298485" expanded="true" signature="138:339" ph="..." />
+            <marker date="1562600298485" expanded="true" signature="511:564" ph="..." />
+            <marker date="1562600298485" expanded="true" signature="1735:1744" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/conf.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>

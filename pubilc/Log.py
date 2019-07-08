@@ -1,5 +1,5 @@
 import logging, time, os
-from mmodel.Config import *
+from model.Config import *
 class Log:
     def __init__(self):
         # 文件的命名
@@ -9,7 +9,7 @@ class Log:
         self.formatter = logging.Formatter('[%(asctime)s] - %(filename)s] - %(levelname)s: %(message)s')
     def __console(self,level, message):
         # 创建一个FileHandler，用于写到本地
-        self.logname = os.path.join(path_log(), '%s.log'%time.strftime('%Y_%m_%d'))
+        self.logname = os.path.join(Config().path_log(), '%s.log'%time.strftime('%Y_%m_%d'))
         fh = logging.FileHandler(self.logname, 'a', encoding='utf-8')  # 这个是python3的追加模式
 
         fh.setLevel(logging.DEBUG)
@@ -42,5 +42,5 @@ class Log:
     def error(self, message):
         self.__console('error', message)
 if __name__ == '__main__':
-    print(path_log())
+    print(Config().path_log())
 

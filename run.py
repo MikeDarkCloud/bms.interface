@@ -95,11 +95,11 @@ def send_mail(sender, psw, receiver, smtpserver, report_file):
         print('test report email has send out !')
 if __name__ == "__main__":
     # 测试用例的路径、匹配规则
-    case_path = path_case()
+    case_path = Config().path_case()
     rule="test*.py"
     all_case = add_case(case_path,rule) # 1加载用例
     # 生成测试报告的路径
-    report_path = path_report()
+    report_path = Config().path_report()
     run_case(all_case,report_path) # 2执行用例
      # 获取最新的测试报告文件
     report_file = get_report_file(report_path)   # 3获取最新的测试报告

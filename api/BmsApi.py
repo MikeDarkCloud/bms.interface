@@ -5,8 +5,8 @@ class BmsApi(rewrxl):
     '''bms接口'''
     def login(self):
         endpoint = 'login.do'
-        user=Config.loginUser()
-        urls = ''.join([Config.url(),endpoint])
+        user=Config().loginUser()
+        urls = ''.join([Config().url(),endpoint])
         params = {"username": user[0], "password": user[1], "validCode": "1111"}
         r = requests.post(urls, params=params)
         print(r.status_code)
@@ -20,7 +20,7 @@ class BmsApi(rewrxl):
         '''成教或国开报读页面接口调用获取web_token'''
         if recruitType == 1:
             endpoint = 'recruit/toRecruitAdd.do?rcruitType=%s' %recruitType
-            urls = ''.join([url(), endpoint])
+            urls = ''.join([Config().url(), endpoint])
             cookies = eval(self.sread_xl('Cookies','B'))
             r=requests.get(url=urls,cookies=cookies)
             # print(r.text)
@@ -32,7 +32,7 @@ class BmsApi(rewrxl):
             return r.status_code
         elif recruitType == 2:
             endpoint = 'recruit/toRecruitAdd.do?recruitType=%s' %recruitType
-            urls = ''.join([url(), endpoint])
+            urls = ''.join([Config().url(), endpoint])
             cookies = eval(self.sread_xl('Cookies','B'))
             r = requests.get(url=urls, cookies=cookies)
             pattern = re.compile(r'(?<=(?:<input type="hidden" name="_web_token" value="))[1-9]\d*(?=(?:" />))')
@@ -51,7 +51,7 @@ class BmsApi(rewrxl):
             data=GetTestData().get_cj_toRecruitAdd_data()
             endpoint = 'recruit/recruitAdd.do'
             cookies = eval(self.sread_xl('Cookies','B'))
-            urls = ''.join([url(),endpoint])
+            urls = ''.join([Config().url(),endpoint])
             r = requests.post(urls,cookies=cookies,files=data)
             print(r.text)
             # self.assertEqual(r.status_code,200,msg='成教报读信息录入接口调用失败！')
@@ -90,7 +90,7 @@ class BmsApi(rewrxl):
             data = GetTestData().get_gk_toRecruitAdd_data()
             endpoint = 'recruit/recruitAdd.do'
             cookies = eval(self.sread_xl('Cookies','B'))
-            urls = ''.join([url(), endpoint])
+            urls = ''.join([Config().url(), endpoint])
             # 发起调用
             r = requests.post(urls, cookies=cookies, files=data)
             print(r.text)
@@ -152,7 +152,7 @@ class BmsApi(rewrxl):
     def pay(self,recruitType):
         '''支付页面web_token获取'''
         endpoint1 = 'stdFee/pay.do'
-        urls = ''.join([url(), endpoint1])
+        urls = ''.join([Config().url(), endpoint1])
         if recruitType == 1:
             data=GetTestData().get_cpay_data()
             cookies = eval(self.sread_xl('Cookies','B'))
@@ -176,7 +176,7 @@ class BmsApi(rewrxl):
         '''缴费审核接口'''
         if recruitType == 1:
             endpoint1 = 'feeReview/reviewFee.do'
-            urls = ''.join([url(), endpoint1])
+            urls = ''.join([Config().url(), endpoint1])
             data=GetTestData().get_cpay_review_data()
             cookies = eval(self.sread_xl('Cookies','B'))
             r = requests.post(urls, data=data, cookies=cookies)
@@ -188,7 +188,7 @@ class BmsApi(rewrxl):
             return r.status_code,r.text,zhimi_amount
         elif recruitType == 2:
             endpoint1 = 'feeReview/reviewFees.do'
-            urls = ''.join([url(), endpoint1])
+            urls = ''.join([Config().url(), endpoint1])
             data=GetTestData().get_gpay_review_data()
             cookies = eval(self.sread_xl('Cookies','B'))
             r = requests.post(urls, data=data, cookies=cookies)
@@ -229,7 +229,7 @@ class BmsApi(rewrxl):
         endpoint = 'studentModify/insertStudentModify.do'
         # 拼接url
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         #想修改什么就填什么
         r = requests.post(urls, data=GetTestData().get_cj_studentModifyAdd_data(newStdName,newIdCard,newSex,newUnvsId,newPfsnId),cookies=cookies)
         learn_Id = self.sread_xl('CJdata', 'D')
@@ -244,7 +244,7 @@ class BmsApi(rewrxl):
         endpoint = 'studentModify/insertStudentModify.do'
         # 拼接url
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         #想修改什么就填什么
         r = requests.post(urls, data=GetTestData().get_gk_studentModifyAdd_data(newStdName,newIdCard,newSex,newUnvsId,newPfsnId),cookies=cookies)
         learn_Id = self.sread_xl('GKdata', 'D')
@@ -260,7 +260,7 @@ class BmsApi(rewrxl):
         endpoint = 'studentModify/editToAudit.do?modifyId=%s&exType=UPDATE' %modifyId
         # 拼接url
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         #想修改什么就填什么
         pattern = re.compile(r'(?<=(?:<input type="hidden" value="))[1-9]\d*(?=(?:" name="_web_token"))')
         r = requests.get(urls,cookies=cookies)
@@ -275,7 +275,7 @@ class BmsApi(rewrxl):
         endpoint = 'studentModify/editToAudit.do?modifyId=%s&exType=UPDATE' %modifyId
         # 拼接url
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         pattern = re.compile(r'(?<=(?:<input type="hidden" value="))[1-9]\d*(?=(?:" name="_web_token"))')
         r = requests.get(urls,cookies=cookies)
         result = re.findall(pattern, r.content.decode("utf-8"), flags=0)
@@ -287,7 +287,7 @@ class BmsApi(rewrxl):
         '''新生信息修改审核'''
         endpoint = 'studentModify/passStudentAuditModify.do'
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         r = requests.post(urls,cookies=cookies,data=GetTestData().get_cj_passStudentAuditModify_data())
         return r.status_code, r.text
 
@@ -295,7 +295,7 @@ class BmsApi(rewrxl):
         '''附件上传'''
         endpoint = 'recruit/updateAnnex.do'
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         data = GetTestData().get_updateAnnex_data(num)
         r = requests.post(urls,cookies=cookies,files=data)
         return r.status_code, r.text
@@ -304,7 +304,7 @@ class BmsApi(rewrxl):
         '''考前资料核查接口'''
         endpoint = 'annexCheck/charge.do'
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         data = GetTestData().cj_charge_data(num)
         r = requests.post(urls,cookies=cookies,data=data)
         return r.status_code, r.text
@@ -313,7 +313,7 @@ class BmsApi(rewrxl):
         '''考前资料最终核查接口'''
         endpoint = 'annexCheck/check.do'
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         data = GetTestData().get_check_data(recruitType)
         r = requests.post(urls,cookies=cookies,data=data)
         return r.status_code, r.text
@@ -322,7 +322,7 @@ class BmsApi(rewrxl):
         '''考前确认接口'''
         endpoint = 'testConfirm/okConfirm.do'
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         data = GetTestData().get_okConfirm_data()
         r = requests.post(urls,cookies=cookies,data=data)
         return r.status_code, r.text
@@ -331,7 +331,7 @@ class BmsApi(rewrxl):
         '''成考分数录入页面web_token获取'''
         endpoint = 'studentScore/edit.do?learnId=%s&idCard=%s&stdName=%s' %(self.sread_xl('CJdata', 'D'),self.sread_xl('CJdata', 'C'),self.sread_xl('CJdata', 'A'))
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         r = requests.post(urls,cookies=cookies)
         pattern = re.compile(r'(?<=(?:<input type="hidden" value="))[1-9]\d*(?=(?:" name="_web_token"))')
         result = re.findall(pattern, r.content.decode("utf-8"), flags=0)
@@ -343,7 +343,7 @@ class BmsApi(rewrxl):
         '''成考分数录入接口'''
         endpoint = 'studentScore/updateStudentScore.do'
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         r = requests.post(urls,cookies=cookies,data=GetTestData().get_updateStudentScore_data())
         return r.status_code, r.text
 
@@ -351,7 +351,7 @@ class BmsApi(rewrxl):
         '''成教录取接口'''
         endpoint = 'stdEnroll/enroll.do'
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         r = requests.post(urls,cookies=cookies,data=GetTestData().get_enroll_data())
         return r.status_code, r.text
 
@@ -365,7 +365,7 @@ class BmsApi(rewrxl):
             cell='J'
             endpoint = 'studentChange/edit.do?exType=ADD&learnId=%s&stdName=%s' % (learnId, stdName)
             cookies = eval(self.sread_xl('Cookies', 'B'))
-            urls = ''.join([url(), endpoint])
+            urls = ''.join([Config().url(), endpoint])
             r = requests.get(urls, cookies=cookies)
             pattern = re.compile(r'(?<=(?:<input type="hidden" value="))[1-9]\d*(?=(?:" name="_web_token"))')
             result = re.findall(pattern, r.content.decode("utf-8"), flags=0)
@@ -379,7 +379,7 @@ class BmsApi(rewrxl):
             cell='K'
             endpoint = 'studentChange/edit.do?exType=ADD&learnId=%s&stdName=%s' % (learnId, stdName)
             cookies = eval(self.sread_xl('Cookies', 'B'))
-            urls = ''.join([url(), endpoint])
+            urls = ''.join([Config().url(), endpoint])
             r = requests.get(urls, cookies=cookies)
             pattern = re.compile(r'(?<=(?:<input type="hidden" value="))[1-9]\d*(?=(?:" name="_web_token"))')
             result = re.findall(pattern, r.content.decode("utf-8"), flags=0)
@@ -395,7 +395,7 @@ class BmsApi(rewrxl):
         if recruitType ==1:
             endpoint = 'studentChange/addBdStudentChange.do'
             cookies = eval(self.sread_xl('Cookies', 'B'))
-            urls = ''.join([url(), endpoint])
+            urls = ''.join([Config().url(), endpoint])
             r = requests.post(urls, cookies=cookies, data=GetTestData().get_addBdStudentChange_data(recruitType))
             mysql2 = "SELECT count(*) FROM bms.bd_student_coupon  WHERE std_id = '%s' and coupon_id = '1003'" % self.sread_xl('CJdata','E')
             coupon_count = ConnectMysql().select_mysql(mysql2)
@@ -403,7 +403,7 @@ class BmsApi(rewrxl):
         elif recruitType ==2:
             endpoint = 'studentChange/addBdStudentChange.do'
             cookies = eval(self.sread_xl('Cookies', 'B'))
-            urls = ''.join([url(), endpoint])
+            urls = ''.join([Config().url(), endpoint])
             r = requests.post(urls, cookies=cookies, data=GetTestData().get_addBdStudentChange_data(recruitType))
             sleep(8)
             mysql2 = "SELECT stranded_account FROM bms.bd_student_info WHERE std_id = '%s'" % self.sread_xl('GKdata','E')
@@ -414,7 +414,7 @@ class BmsApi(rewrxl):
         '''成教学员退学页面web_token获取'''
         endpoint = 'studentOut/applyOut.do?learnId=%s&stdName=%s' %(self.sread_xl('CJdata', 'D'),self.sread_xl('CJdata', 'A'))
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         r = requests.get(urls,cookies=cookies)
         pattern = re.compile(r'(?<=(?:<input type="hidden" value="))[1-9]\d*(?=(?:" name="_web_token"))')
         result = re.findall(pattern, r.content.decode("utf-8"), flags=0)
@@ -427,7 +427,7 @@ class BmsApi(rewrxl):
         '''退学申请发起接口'''
         endpoint = 'studentOut/addStudentOut.do'
         cookies = eval(self.sread_xl('Cookies', 'B'))
-        urls = ''.join([url(), endpoint])
+        urls = ''.join([Config().url(), endpoint])
         r = requests.post(urls, cookies=cookies, data=GetTestData().get_addStudentOut_data())
         mysql2 = "SELECT out_id FROM bms.bd_student_out WHERE std_id = '%s'" % self.sread_xl('CJdata', 'E')
         out_id = ConnectMysql().select_mysql(mysql2)
@@ -439,7 +439,7 @@ class BmsApi(rewrxl):
         reason = '成考未通过'
         endpoint = 'studentOutApproval/editToFinancial.do?outId=%s@2020@%s@%s@%s&exType=UPDATE&undo=false' %(self.sread_xl('CJdata', 'D'),self.sread_xl('CJdata', 'M'),self.sread_xl('CJdata', 'A'),urllib.parse.quote(reason))
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         r = requests.get(urls,cookies=cookies)
         pattern = re.compile(r'(?<=(?:type="hidden" value="))[1-9]\d*(?=(?:" name="_web_token"))')
         result = re.findall(pattern, r.content.decode("utf-8"), flags=0)
@@ -451,7 +451,7 @@ class BmsApi(rewrxl):
         '''退学初审接口'''
         endpoint = 'studentOutApproval/passFinancialApproval.do'
         cookies = eval(self.sread_xl('Cookies', 'B'))
-        urls = ''.join([url(), endpoint])
+        urls = ''.join([Config().url(), endpoint])
         r = requests.post(urls, cookies=cookies, data=GetTestData().get_passFinancialApproval())
         return r.status_code, r.text
 
@@ -460,7 +460,7 @@ class BmsApi(rewrxl):
         reason = '成考未通过'
         endpoint = 'studentOutApproval/editToSchoolManaged.do?outId=%s@2020@%s@%s@%s&exType=UPDATE&undo=false' %(self.sread_xl('CJdata', 'D'),self.sread_xl('CJdata', 'M'),self.sread_xl('CJdata', 'A'),urllib.parse.quote(reason))
         cookies = eval(self.sread_xl('Cookies','B'))
-        urls = ''.join([url(),endpoint])
+        urls = ''.join([Config().url(),endpoint])
         r = requests.get(urls,cookies=cookies)
         pattern = re.compile(r'(?<=(?:type="hidden" value="))[1-9]\d*(?=(?:" name="_web_token"))')
         result = re.findall(pattern, r.content.decode("utf-8"), flags=0)
@@ -472,7 +472,7 @@ class BmsApi(rewrxl):
         '''退学终审接口'''
         endpoint = 'studentOutApproval/passSchoolManagedApproval.do'
         cookies = eval(self.sread_xl('Cookies', 'B'))
-        urls = ''.join([url(), endpoint])
+        urls = ''.join([Config().url(), endpoint])
         r = requests.post(urls, cookies=cookies, data=GetTestData().get_passSchoolManagedApproval())
         sleep(8)
         mysql2 = "SELECT cash_account FROM bms.bd_student_info WHERE std_id = '%s'" % self.sread_xl('CJdata', 'E')

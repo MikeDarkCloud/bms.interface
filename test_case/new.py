@@ -144,19 +144,22 @@ import time
 # #     RecruitAddTest().test_00_login()
 # #     RecruitAddTest().test_03_gk_recruit_webtoken()
 # #     RecruitAddTest().test_04_gk_recruit()
-class people():
-    name=''
-    age=0
-    _weight=0
-    def __init__(self,n,a,w):
-        self.name=n
-        self.age=a
-        self._weight=w
-    def speak(self):
-        print ("我的名字是："+str(self.name)+"我的年龄是："+str(self.age)+"我的体重是："+str(self._weight)+"kg")
+#
 
-class student(people):
-    def xxx(self):
-        self.speak()
+import yaml
 
-student("小7",2,30).xxx()
+f = open("C:\\bms.interface\\conf\\conf.yml",encoding='utf-8')
+d = yaml.load(f)
+print(d)
+# print(d["bms_url"])
+
+
+
+list = ("qqq","www","eee")
+
+for i in range(len(list)):
+    print(list[i])
+
+dict=("qqq","www","eee")
+for i in range(len(dict)):
+    print(dict[i])

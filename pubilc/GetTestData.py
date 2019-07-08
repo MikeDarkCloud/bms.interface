@@ -164,7 +164,7 @@ class GetTestData(rewrxl):
         learnId = self.sread_xl(sheet,learnid)
         stdName = self.sread_xl(sheet,stdName)
         endpoint = 'studentModify/add.do?learnId=%s&stdName=%s&exType=ADD' %(learnId,urllib.parse.quote(stdName))
-        host = url()
+        host = Config().url()
         # 拼接url
         urls = ''.join([host,endpoint])
         return urls
